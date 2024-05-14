@@ -10,3 +10,8 @@ fancy math editor based on glued-together open source libraries
 * wolfram alpha shortcut
 ### screenshots
 ![](https://i.imgur.com/tY81uIo.png)
+### OSS libraries
+* [ACE Editor](https://ace.c9.io/)
+* [MathJax](https://www.mathjax.org/)
+* [ASCIIMath](https://asciimath.org/)
+* [Bootstrap](https://getbootstrap.com/)
