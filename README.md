@@ -9,4 +9,4 @@ fancy math editor based on glued-together open source libraries
 * markdown up/download
 * wolfram alpha shortcut
 ### screenshots
-!()[https://i.imgur.com/tY81uIo.png]
+![](https://i.imgur.com/tY81uIo.png)
