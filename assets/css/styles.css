@@ -1,0 +1,42 @@
+@media print {
+    #left-pane {
+        display: none;
+    }
+}
+
+.pane {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.pane::-webkit-scrollbar {
+    width: 4px;
+}
+
+.pane::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.pane::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pane::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pane {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.1);
+}
+
+#editor {
+    height: calc(100vh - 48px);
+}

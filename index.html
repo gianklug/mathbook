@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathBook</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    </link>
+    <!-- Add Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </link>
+    <!-- Add Ace Editor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.33.1/ace.js"></script>
+    <!-- Add MathJax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Pane -->
+            <div class="col p-0 pane" id="left-pane">
+                <div class="topbar bg-dark text-white">
+                    <div class="d-flex p-2">
+                        <h5 class="flex-grow-1">MathBook</h5>
+                        <button class="btn btn-sm btn-outline-light me-2"
+                            onclick="document.getElementById('fileInput').click()">
+                            <span class="bi-upload"></span>
+                            Upload
+                        </button>
+                        <input type="file" id="fileInput" style="display: none;"></input>
+                        <button class="btn btn-sm btn-outline-light me-2" id="download">
+                            <span class="bi-download"></span>
+                            Download</button>
+                        <button id="wolfram" class="btn btn-sm btn-outline-light me-2">
+                            <span class="bi-calculator"></span>
+                            Wolfram</button>
+                    </div>
+                </div>
+                <div id="editor"></div>
+            </div>
+            <!-- Right Pane -->
+            <div class="col pane" id="preview"></div>
+            <!-- Preview (Background) -->
+            <div class="hidden" id="render" style="display: none;"></div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/ASCIIMathML.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+</html>
